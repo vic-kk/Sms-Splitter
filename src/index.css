@@ -21,24 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.wrap {
-  display: flex;
-  flex-direction: row;
-  gap: 1vw;
-  text-align: left;
-}
-
-.textarea,
-.output {
-  width: 40vw;
-  height: 80vh;
-  overflow-y: scroll;
-}
-
-.output {
-  border: 1px solid black;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

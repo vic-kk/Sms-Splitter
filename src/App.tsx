@@ -8,7 +8,8 @@ function App() {
   const textareaHandle = (
     e:ChangeEvent<HTMLTextAreaElement>,
   ) => {
-    const result = textSplitter(e);
+    const { target: { value : text = '' } } = e;
+    const result = textSplitter(text);
     console.log(result);
     setSplittedSms(() => result);
   };
@@ -18,7 +19,7 @@ function App() {
       <div>
         <p>input</p>
         <textarea
-          className='textarea'
+          className='input'
           onChange={textareaHandle}
         />
       </div>
